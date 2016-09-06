@@ -1,0 +1,12 @@
+name             'chef-mesos-family'
+maintainer       'YOUR_NAME'
+maintainer_email 'YOUR_EMAIL'
+license          'All rights reserved'
+description      'Installs/Configures chef-mesos-family'
+long_description 'Installs/Configures chef-mesos-family'
+version          '0.1.0'
+
+depends 'zookeeper'
+depends 'mesos'
+depends 'marathon'
+depends 'chronos'
