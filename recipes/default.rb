@@ -20,4 +20,5 @@ node.default['mesos']['master']['flags']['zk'] = zk_mesos_url
 node.default['mesos']['slave']['flags']['master'] = zk_mesos_url
 node.default['marathon']['flags']['master'] = zk_mesos_url
 node.default['marathon']['flags']['zk'] = zk_marathon_url
+node.default['marathon']['flags']['task_launch_timeout'] = '300000'
 

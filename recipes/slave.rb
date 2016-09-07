@@ -1,12 +1,14 @@
 
 include_recipe 'chef-mesos-family'
 include_recipe 'mesos::slave'
-include_recipe 'marathon'
-include_recipe 'marathon::service'
 
 
 docker_installation 'default' do
   action :create
+end
+
+docker_service_manager 'default' do
+  action :start
 end
 
 file '/etc/mesos-slave/containerizers' do
